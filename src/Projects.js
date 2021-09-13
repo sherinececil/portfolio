@@ -9,11 +9,12 @@ import Paper from "@material-ui/core/Paper";
 import HackerNewsClone from "./HackerNewsClone.png";
 import KnowYourIp from "./KnowYourIp.png";
 import Capture from "./Capture.PNG";
-import { RepeatOne } from "@material-ui/icons";
+import Todolist from "./Todolist.PNG";
+import { RepeatOne, RepeatOneRounded } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: 180,
+    height: 120,
   },
   container: {
     display: "flex",
@@ -31,15 +32,22 @@ const useStyles = makeStyles((theme) => ({
 const styles = {
   paperContainer1: {
     backgroundImage: `url(${HackerNewsClone})`,
-    backgroundRepeat: RepeatOne,
-    backgroundSize: 200,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: 170,
   },
   paperContainer2: {
     backgroundImage: `url(${KnowYourIp})`,
-    backgroundSize: 200,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: 160,
   },
   paperContainer3: {
     backgroundImage: `url(${Capture})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: 150,
+  },
+  paperContainer4: {
+    backgroundImage: `url(${Todolist})`,
+    backgroundRepeat: "no-repeat",
     backgroundSize: 200,
   },
 };
@@ -61,7 +69,10 @@ export default function Projects({ handleChange, checked }) {
           >
             <svg className={classes.svg}></svg>
             <h4>
-              <a href="https://vibrant-boyd-67473f.netlify.app" target="_blank">
+              <a
+                href="https://nervous-bose-e8cd03.netlify.app/"
+                target="_blank"
+              >
                 Know Your IP App
               </a>
             </h4>
@@ -96,7 +107,14 @@ export default function Projects({ handleChange, checked }) {
             style={styles.paperContainer3}
           >
             <svg className={classes.svg}></svg>
-            <h4>Healthy Twist App</h4>
+            <h4>
+              <a
+                href="https://vibrant-wescoff-1211b0.netlify.app/"
+                target="_blank"
+              >
+                Healthy Twist App
+              </a>
+            </h4>
             <GitHubIcon />
           </Paper>
         </Grow>
@@ -106,7 +124,11 @@ export default function Projects({ handleChange, checked }) {
           style={{ transformOrigin: "0 0 0" }}
           {...(checked ? { timeout: 1000 } : {})}
         >
-          <Paper elevation={4} className={classes.paper}>
+          <Paper
+            elevation={4}
+            className={classes.paper}
+            style={styles.paperContainer4}
+          >
             <svg className={classes.svg}></svg>
             <h4>ToDo List</h4>
             <GitHubIcon />

@@ -1,10 +1,11 @@
 import React from "react";
 import Chip from "@material-ui/core/Chip";
+import "./About.css";
 
 const About = () => {
   return (
     <div>
-      <h2>Sherine Cecil</h2>
+      <h1 text-data="Folded">Hi, I'm Sherine Cecil.</h1>
       <p>
         I am a Frontend Developer, living in Stuttgart, Germany.
         <br />I build clean and responsive interfaces, always seeking to provide

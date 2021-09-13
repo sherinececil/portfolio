@@ -5,7 +5,7 @@ li {
 ul {
   display: flex;
   justify-content: space-around;
-  margin: 150px;
+  margin: 100px;
 }
 li.link1:hover,
 li.link1:active {
@@ -22,4 +22,12 @@ li.link3:active {
 li.link4:hover,
 li.link4:active {
   transform: scale(1.5);
+}
+
+@media (max-width: 450px) {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
