@@ -1,0 +1,25 @@
+li {
+  list-style-type: none;
+  color: white;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 150px;
+}
+li.link1:hover,
+li.link1:active {
+  transform: scale(1.5);
+}
+li.link2:hover,
+li.link2:active {
+  transform: scale(1.5);
+}
+li.link3:hover,
+li.link3:active {
+  transform: scale(1.5);
+}
+li.link4:hover,
+li.link4:active {
+  transform: scale(1.5);
+}
