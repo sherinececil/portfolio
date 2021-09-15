@@ -4,9 +4,13 @@ html,
 body {
   height: 100%;
 }
-h1,
+h1 {
+  font-family: "Poiret One", cursive;
+}
 p {
   font-family: "Poiret One", cursive;
+  /* font-weight: bold; */
+  font-size: large;
 }
 /* body {
  background: -webkit-linear-gradient(45deg, #e6e2df 80%, #c2c1bd 100%);

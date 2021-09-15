@@ -1,3 +1,15 @@
-Paper {
-  background-image: url("../imgs/HackerNewsClone.png");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+h4 {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }

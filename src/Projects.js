@@ -10,6 +10,7 @@ import HackerNewsClone from "./HackerNewsClone.png";
 import KnowYourIp from "./KnowYourIp.png";
 import Capture from "./Capture.PNG";
 import Todolist from "./Todolist.PNG";
+import "./Projects.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,16 +66,14 @@ export default function Projects({ handleChange, checked }) {
             className={classes.paper}
             style={styles.paperContainer2}
           >
-            <svg className={classes.svg}></svg>
-            <h4>
-              <a
-                href="https://nervous-bose-e8cd03.netlify.app/"
-                target="_blank"
-              >
-                Know Your IP App
-              </a>
-            </h4>
-            <GitHubIcon />
+            {" "}
+            <a href="https://nervous-bose-e8cd03.netlify.app/" target="_blank">
+              <svg className={classes.svg}></svg>
+            </a>
+            <h4>Know Your IP App</h4>
+            <a href="https://github.com/sherinececil/Ip-App" target="_blank">
+              <GitHubIcon />{" "}
+            </a>
           </Paper>
         </Grow>
 
@@ -89,13 +88,17 @@ export default function Projects({ handleChange, checked }) {
             className={classes.paper}
             style={styles.paperContainer1}
           >
-            <svg className={classes.svg}></svg>
-            <h4>
-              <a href="https://vibrant-boyd-67473f.netlify.app" target="_blank">
-                Hacker news
-              </a>
-            </h4>
-            <GitHubIcon />
+            {" "}
+            <a href="https://vibrant-boyd-67473f.netlify.app" target="_blank">
+              <svg className={classes.svg}></svg>{" "}
+            </a>
+            <h4>Hacker news</h4>
+            <a
+              href="https://github.com/sherinececil/HackerNews"
+              target="_blank"
+            >
+              <GitHubIcon />
+            </a>
           </Paper>
         </Grow>
         <Grow in={checked}>
@@ -104,16 +107,19 @@ export default function Projects({ handleChange, checked }) {
             className={classes.paper}
             style={styles.paperContainer3}
           >
-            <svg className={classes.svg}></svg>
-            <h4>
-              <a
-                href="https://vibrant-wescoff-1211b0.netlify.app/"
-                target="_blank"
-              >
-                Healthy Twist App
-              </a>
-            </h4>
-            <GitHubIcon />
+            <a
+              href="https://vibrant-wescoff-1211b0.netlify.app/"
+              target="_blank"
+            >
+              <svg className={classes.svg}></svg>{" "}
+            </a>
+            <h4>Healthy Twist App</h4>
+            <a
+              href="https://github.com/sherinececil/Healthy-Twist"
+              target="_blank"
+            >
+              <GitHubIcon />
+            </a>
           </Paper>
         </Grow>
 

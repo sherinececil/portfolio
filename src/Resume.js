@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import "./Resume.css";
 import Grow from "@material-ui/core/Grow";
 import Paper from "@material-ui/core/Paper";
-import { grey } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,7 +35,9 @@ export default function Resume({ handleChange, checked }) {
             className={classes.paper}
             // style={styles.paperContainer2}
           >
-            <svg className={classes.svg}></svg>
+            <a href={ABC} target="_blank">
+              <svg className={classes.svg}></svg>
+            </a>
           </Paper>
         </Grow>
 

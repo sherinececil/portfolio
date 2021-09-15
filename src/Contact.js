@@ -14,7 +14,7 @@ const Contact = () => {
   }
   return (
     <div>
-      <p> GET IN TOUCH </p>
+      <p style={{ fontWeight: "bold", fontSize: "large" }}> GET IN TOUCH </p>
       <ul>
         <li>
           {" "}
