@@ -10,7 +10,6 @@ import HackerNewsClone from "./HackerNewsClone.png";
 import KnowYourIp from "./KnowYourIp.png";
 import Capture from "./Capture.PNG";
 import Todolist from "./Todolist.PNG";
-import { RepeatOne, RepeatOneRounded } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,7 +52,6 @@ const styles = {
 };
 
 export default function Projects({ handleChange, checked }) {
-  console.log(checked);
   checked = !checked;
 
   const classes = useStyles();

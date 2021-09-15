@@ -23,7 +23,7 @@ const Navbar = () => {
             <li className="link1">About</li>
           </Link>
           <Link to="/projects" style={{ textDecoration: "none" }}>
-            <li className="link2">Project</li>
+            <li className="link2">Projects</li>
           </Link>
           <Link to="/resume" style={{ textDecoration: "none" }}>
             <li className="link3">Resume</li>

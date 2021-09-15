@@ -25,7 +25,7 @@ export default function App() {
         </Route>
 
         <Route path="/Resume">
-          <Resume />
+          <Resume handleChange={handleChange} checked={checked} />
         </Route>
         <Route path="/contact">
           <Contact />
