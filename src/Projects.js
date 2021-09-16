@@ -1,8 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-// import Switch from "@material-ui/core/Switch";
-// import FormControlLabel from "@material-ui/core/FormControlLabel";
-// import Typography from "@material-ui/core/";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Grow from "@material-ui/core/Grow";
 import Paper from "@material-ui/core/Paper";

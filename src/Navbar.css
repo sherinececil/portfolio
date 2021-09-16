@@ -1,12 +1,13 @@
+
 li {
   list-style-type: none;
   color: white;
 }
-ul {
+/* ul {
   display: flex;
   justify-content: space-around;
   margin: 100px;
-}
+} */
 li.link1:hover,
 li.link1:active {
   transform: scale(1.5);

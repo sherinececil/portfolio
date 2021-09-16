@@ -18,7 +18,14 @@ const Navbar = () => {
   return (
     <div className="navbar-link">
       <nav>
-        <ul>
+        <ul
+          className="navbar-link-ul"
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            margin: "100px",
+          }}
+        >
           <Link to="/" style={{ textDecoration: "none" }}>
             <li className="link1">About</li>
           </Link>
