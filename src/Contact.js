@@ -61,7 +61,9 @@ const Contact = () => {
           </Tooltip>
         </li>
         <li style={{ margin: "20px" }}>
-          <Icon icon="et:linkedin" width="35" />
+          <a href="www.linkedin.com/in/sherine-cecil-a6b03318" target="_blank">
+            <Icon icon="et:linkedin" width="35" />
+          </a>
         </li>
         <li style={{ margin: "20px" }}>
           <a href="https://github.com/sherinececil" target="_blank">

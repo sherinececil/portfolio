@@ -130,9 +130,20 @@ export default function Projects({ handleChange, checked }) {
             className={classes.paper}
             style={styles.paperContainer4}
           >
-            <svg className={classes.svg}></svg>
+            <a
+              href="https://romantic-banach-56d860.netlify.app/"
+              target="_blank"
+            >
+              <svg className={classes.svg}></svg>
+            </a>
+
             <h4>ToDo List</h4>
-            <GitHubIcon />
+            <a
+              href="https://github.com/sherinececil/To-do-list-app"
+              target="_blank"
+            >
+              <GitHubIcon />
+            </a>
           </Paper>
         </Grow>
       </div>
