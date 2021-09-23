@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import "./Resume.css";
 import Grow from "@material-ui/core/Grow";
 import Paper from "@material-ui/core/Paper";
+import { Icon } from "@iconify/react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,6 +53,13 @@ export default function Resume({ handleChange, checked }) {
             className={classes.paper}
             // style={styles.paperContainer1}
           >
+            <ul>
+              <Icon icon="logos:html-5" width="35" />
+              <Icon icon="logos:css-3" width="35" />
+              <Icon icon="logos:javascript" width="35" />
+              <Icon icon="logos:react" width="35" />
+              <Icon icon="logos:bootstrap" width="35" />
+            </ul>
             <svg className={classes.svg}></svg>
           </Paper>
         </Grow>
@@ -61,6 +69,8 @@ export default function Resume({ handleChange, checked }) {
             className={classes.paper}
             // style={styles.paperContainer3}
           >
+            <Icon icon="logos:nodejs" width="35" />
+            <Icon icon="logos:mongodb" width="35" />
             <svg className={classes.svg}></svg>
           </Paper>
         </Grow>

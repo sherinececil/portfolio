@@ -2,3 +2,6 @@
   display: inline;
   width: 0%;
 }
+.iconClass {
+  cursor: pointer;
+}

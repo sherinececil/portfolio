@@ -18,17 +18,13 @@ export default function App() {
 
       <Switch>
         <Route exact path="/">
-          <About />
+          <About handleChange={handleChange} checked={checked} />
         </Route>
         <Route path="/projects">
           <Projects handleChange={handleChange} checked={checked} />
         </Route>
-
-        <Route path="/Resume">
-          <Resume handleChange={handleChange} checked={checked} />
-        </Route>
         <Route path="/contact">
-          <Contact />
+          <Contact handleChange={handleChange} checked={checked} />
         </Route>
       </Switch>
     </div>

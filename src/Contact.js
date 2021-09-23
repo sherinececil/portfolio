@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import copy from "copy-to-clipboard";
 import { Icon } from "@iconify/react";
 import Tooltip from "@material-ui/core/Tooltip";
+import Grow from "@material-ui/core/Grow";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Contact.css";
 
@@ -15,20 +17,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Contact = () => {
-  function triggerOutlook() {
-    console.log("Do u see ...");
-    var body = escape(
-      window.document.title + String.fromCharCode(13) + window.location.href
-    );
-
-    var subject = "Take a look at this cool code snippet from CodeDigest.Com!!";
-
-    window.location.href = "mailto:?body=" + body + "&subject=" + subject;
-  }
-
+const Contact = ({ handleChange, checked }) => {
+  checked = !checked;
   const classes = useStyles();
+  // Copy to ClipBoard const [copyText, setCopyText] = useState('');
 
+  const copyToClipboard = (e) => {
+    copy(e.target.value);
+    console.log(e.target.id);
+    alert(`You have copied "${e.target.value}"`);
+  };
+  // Copy to ClipBoard
   return (
     <div>
       <p style={{ margin: "20px" }}>GET IN TOUCH</p>
@@ -41,35 +40,62 @@ const Contact = () => {
       >
         <li style={{ margin: "20px" }}>
           {" "}
-          <Tooltip
-            classes={{ tooltip: classes.emailWidth }}
-            title="sherinececil@gmail.com"
-            placement="bottom"
-          >
-            <a href="#" onclick={triggerOutlook}>
-              <Icon icon="line-md:email" width="35" />
+          <Grow in={checked}>
+            <Tooltip
+              classes={{ tooltip: classes.emailWidth }}
+              title="sherinececil@gmail.com"
+              placement="bottom"
+            >
+              <a href="#">
+                <Icon icon="line-md:email" width="35" />
+              </a>
+            </Tooltip>
+          </Grow>
+        </li>
+
+        <Grow
+          in={checked}
+          style={{ transformOrigin: "0 0 0" }}
+          {...(checked ? { timeout: 1000 } : {})}
+        >
+          <li style={{ margin: "20px" }}>
+            <Tooltip
+              classes={{ tooltip: classes.customWidth }}
+              title="015224823980"
+              placement="bottom"
+              value="015224823980"
+              id="myInput"
+              onClick={copyToClipboard}
+            >
+              <Icon
+                icon="eva:phone-call-outline"
+                width="35"
+                className="iconClass"
+              />
+            </Tooltip>
+          </li>
+        </Grow>
+        <Grow in={checked}>
+          <li style={{ margin: "20px" }}>
+            <a
+              href="https://www.linkedin.com/in/sherine-cecil-a6b03318/"
+              target="_blank"
+            >
+              <Icon icon="et:linkedin" width="35" />
             </a>
-          </Tooltip>
-        </li>
-        <li style={{ margin: "20px" }}>
-          <Tooltip
-            classes={{ tooltip: classes.customWidth }}
-            title="015224823980"
-            placement="bottom"
-          >
-            <Icon icon="eva:phone-call-outline" width="35" />
-          </Tooltip>
-        </li>
-        <li style={{ margin: "20px" }}>
-          <a href="www.linkedin.com/in/sherine-cecil-a6b03318" target="_blank">
-            <Icon icon="et:linkedin" width="35" />
-          </a>
-        </li>
-        <li style={{ margin: "20px" }}>
-          <a href="https://github.com/sherinececil" target="_blank">
-            <Icon icon="akar-icons:github-outline-fill" width="35" />
-          </a>
-        </li>
+          </li>
+        </Grow>
+        <Grow
+          in={checked}
+          style={{ transformOrigin: "0 0 0" }}
+          {...(checked ? { timeout: 1000 } : {})}
+        >
+          <li style={{ margin: "20px" }}>
+            <a href="https://github.com/sherinececil" target="_blank">
+              <Icon icon="akar-icons:github-outline-fill" width="35" />
+            </a>
+          </li>
+        </Grow>
       </ul>
     </div>
   );

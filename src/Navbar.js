@@ -2,6 +2,7 @@ import React from "react";
 import Link from "react-router-dom/Link";
 import "./Navbar.css";
 import { makeStyles } from "@material-ui/core/styles";
+import Lebenslauf from "./Lebenslauf.pdf";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,9 +33,13 @@ const Navbar = () => {
           <Link to="/projects" style={{ textDecoration: "none" }}>
             <li className="link2">Projects</li>
           </Link>
-          <Link to="/resume" style={{ textDecoration: "none" }}>
-            <li className="link3">Resume</li>
-          </Link>
+          {/* <Link to="/resume" style={{ textDecoration: "none" }}> */}
+          <li className="link3">
+            <a href={Lebenslauf} target="_blank">
+              Resume
+            </a>
+          </li>
+          {/* </Link> */}
           <Link to="/contact" style={{ textDecoration: "none" }}>
             <li className="link4">Contact</li>
           </Link>
