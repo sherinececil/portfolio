@@ -18,33 +18,33 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
   return (
     <div className="navbar-link">
-      <nav>
-        <ul
-          className="navbar-link-ul"
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            margin: "100px",
-          }}
-        >
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <li className="link1">About</li>
-          </Link>
-          <Link to="/projects" style={{ textDecoration: "none" }}>
-            <li className="link2">Projects</li>
-          </Link>
-          {/* <Link to="/resume" style={{ textDecoration: "none" }}> */}
-          <li className="link3">
-            <a href={Lebenslauf} target="_blank">
-              Resume
-            </a>
-          </li>
-          {/* </Link> */}
-          <Link to="/contact" style={{ textDecoration: "none" }}>
-            <li className="link4">Contact</li>
-          </Link>
-        </ul>
-      </nav>
+      {/* <nav> */}
+      <ul
+        className="navbar-link-ul"
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          margin: "100px",
+        }}
+      >
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <li className="link1">About</li>
+        </Link>
+        <Link to="/projects" style={{ textDecoration: "none" }}>
+          <li className="link2">Projects</li>
+        </Link>
+        {/* <Link to="/resume" style={{ textDecoration: "none" }}> */}
+        <li className="link3">
+          <a href={Lebenslauf} target="_blank">
+            Resume
+          </a>
+        </li>
+        {/* </Link> */}
+        <Link to="/contact" style={{ textDecoration: "none" }}>
+          <li className="link4">Contact</li>
+        </Link>
+      </ul>
+      {/* </nav> */}
     </div>
   );
 };
