@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Resume from "./Resume";
 import About from "./About";
 export default function App() {
   const [checked, setChecked] = React.useState(false);

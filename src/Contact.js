@@ -20,14 +20,19 @@ const useStyles = makeStyles((theme) => ({
 const Contact = ({ handleChange, checked }) => {
   checked = !checked;
   const classes = useStyles();
-  // Copy to ClipBoard const [copyText, setCopyText] = useState('');
+  // // Copy to ClipBoard const [copyText, setCopyText] = useState('');
 
-  const copyToClipboard = (e) => {
-    copy(e.target.value);
-    console.log(e.target.id);
-    alert(`You have copied "${e.target.value}"`);
-  };
-  // Copy to ClipBoard
+  // const copyToClipboard = (e) => {
+  //   copy(e.target.value);
+  //   console.log(e.target.id);
+  //   alert(`You have copied "${e.target.value}"`);
+  // };
+  // // Copy to ClipBoard
+
+  function handleMail() {
+    window.open("mailto:sherinececil@gmail.com");
+  }
+
   return (
     <div>
       <p style={{ margin: "20px" }}>GET IN TOUCH</p>
@@ -47,7 +52,7 @@ const Contact = ({ handleChange, checked }) => {
               placement="bottom"
             >
               <a href="#">
-                <Icon icon="line-md:email" width="35" />
+                <Icon icon="line-md:email" width="40" onClick={handleMail} />
               </a>
             </Tooltip>
           </Grow>
@@ -65,11 +70,10 @@ const Contact = ({ handleChange, checked }) => {
               placement="bottom"
               value="015224823980"
               id="myInput"
-              onClick={copyToClipboard}
             >
               <Icon
                 icon="eva:phone-call-outline"
-                width="35"
+                width="40"
                 className="iconClass"
               />
             </Tooltip>
@@ -81,7 +85,7 @@ const Contact = ({ handleChange, checked }) => {
               href="https://www.linkedin.com/in/sherine-cecil-a6b03318/"
               target="_blank"
             >
-              <Icon icon="et:linkedin" width="35" />
+              <Icon icon="et:linkedin" width="40" />
             </a>
           </li>
         </Grow>
@@ -92,7 +96,7 @@ const Contact = ({ handleChange, checked }) => {
         >
           <li style={{ margin: "20px" }}>
             <a href="https://github.com/sherinececil" target="_blank">
-              <Icon icon="akar-icons:github-outline-fill" width="35" />
+              <Icon icon="akar-icons:github-outline-fill" width="40" />
             </a>
           </li>
         </Grow>

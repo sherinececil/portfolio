@@ -7,11 +7,12 @@ body {
 h1,
 h3 {
   font-family: "Poiret One", cursive;
+  font-size: 2.5rem !important;
 }
 p {
   font-family: "Poiret One", cursive;
   /* font-weight: bold; */
-  font-size: large;
+  font-size: 1.7rem !important;
 }
 
 .logoList {

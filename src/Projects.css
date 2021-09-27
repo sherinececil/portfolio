@@ -15,10 +15,11 @@ a:active {
 }
 
 @media (max-width: 450px) {
-  ul {
-    display: inline-block;
+  .container {
+    display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    padding-top: -50px;
   }
 }
