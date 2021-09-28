@@ -4,6 +4,8 @@
 }
 p {
   font-size: 2.2rem !important;
+  font-weight: bold;
+  /* margin: "50px"; */
 }
 .iconClass {
   cursor: pointer;

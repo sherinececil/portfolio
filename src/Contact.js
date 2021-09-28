@@ -35,7 +35,7 @@ const Contact = ({ handleChange, checked }) => {
 
   return (
     <div>
-      <p style={{ margin: "20px" }}>GET IN TOUCH</p>
+      <p>GET IN TOUCH</p>
       <ul
         className="contact-ul"
         style={{

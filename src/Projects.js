@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       justifyContent: "center",
       flexDirection: "column",
+      width: 200,
+      margin: 90,
     },
   },
   paper: {
@@ -72,7 +74,7 @@ export default function Projects({ handleChange, checked }) {
             <a href="https://nervous-bose-e8cd03.netlify.app/" target="_blank">
               <svg className={classes.svg}></svg>
             </a>
-            <h4>Know Your IP App</h4>
+            <h2>Know Your IP App</h2>
             <a href="https://github.com/sherinececil/Ip-App" target="_blank">
               <GitHubIcon />{" "}
             </a>
@@ -94,7 +96,7 @@ export default function Projects({ handleChange, checked }) {
             <a href="https://vibrant-boyd-67473f.netlify.app" target="_blank">
               <svg className={classes.svg}></svg>{" "}
             </a>
-            <h4>Hacker news</h4>
+            <h2>Hacker news</h2>
             <a
               href="https://github.com/sherinececil/HackerNews"
               target="_blank"
@@ -115,7 +117,7 @@ export default function Projects({ handleChange, checked }) {
             >
               <svg className={classes.svg}></svg>{" "}
             </a>
-            <h4>Healthy Twist App</h4>
+            <h2>Healthy Twist App</h2>
             <a
               href="https://github.com/sherinececil/Healthy-Twist"
               target="_blank"
@@ -142,7 +144,7 @@ export default function Projects({ handleChange, checked }) {
               <svg className={classes.svg}></svg>
             </a>
 
-            <h4>ToDo List</h4>
+            <h2>ToDo List</h2>
             <a
               href="https://github.com/sherinececil/To-do-list-app"
               target="_blank"
