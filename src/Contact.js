@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import copy from "copy-to-clipboard";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Icon } from "@iconify/react";
 import Tooltip from "@material-ui/core/Tooltip";
 import Grow from "@material-ui/core/Grow";
@@ -20,19 +21,23 @@ const useStyles = makeStyles((theme) => ({
 const Contact = ({ handleChange, checked }) => {
   checked = !checked;
   const classes = useStyles();
-  // // Copy to ClipBoard const [copyText, setCopyText] = useState('');
+  const [text, setText] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
 
-  // const copyToClipboard = (e) => {
-  //   copy(e.target.value);
-  //   console.log(e.target.id);
-  //   alert(`You have copied "${e.target.value}"`);
-  // };
-  // // Copy to ClipBoard
-
-  function handleMail() {
+  const handleMail = () => {
     window.open("mailto:sherinececil@gmail.com");
-  }
+  };
 
+  const handleClick = () => {
+    setText("015224823980");
+  };
+
+  const onCopyText = () => {
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 1000);
+  };
   return (
     <div>
       <p>GET IN TOUCH</p>
@@ -57,7 +62,6 @@ const Contact = ({ handleChange, checked }) => {
             </Tooltip>
           </Grow>
         </li>
-
         <Grow
           in={checked}
           style={{ transformOrigin: "0 0 0" }}
@@ -75,10 +79,12 @@ const Contact = ({ handleChange, checked }) => {
                 icon="eva:phone-call-outline"
                 width="40"
                 className="iconClass"
+                onClick={handleClick}
               />
             </Tooltip>
           </li>
         </Grow>
+
         <Grow in={checked}>
           <li style={{ margin: "20px" }}>
             <a

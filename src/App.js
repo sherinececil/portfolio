@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./Navbar.js";
+import Footer from "./Footer.js";
 import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import Projects from "./Projects";
@@ -26,6 +27,7 @@ export default function App() {
           <Contact handleChange={handleChange} checked={checked} />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }
